@@ -1,0 +1,51 @@
+{
+    "name": "shapecode/less-raven-bundle",
+    "description": "Adds a new raven client service that sends less information.",
+    "keywords": [
+        "symfony",
+        "shapecode",
+        "sentry",
+        "raven",
+        "less",
+        "information",
+        "bundle"
+    ],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "homepage": "http://shapecode.de",
+    "support": {
+        "email": "support@nikita-loges.de",
+        "issues": "https://bitbucket.org/shapecode/symfony-less-raven-bundle/issues",
+        "source": "https://bitbucket.org/shapecode/symfony-less-raven-bundle/downloads",
+        "wiki": "https://bitbucket.org/shapecode/symfony-less-raven-bundle/wiki/Home"
+    },
+    "authors": [
+        {
+            "name": "Nikita Loges",
+            "homepage": "http://nikita-loges.de",
+            "email": "develop@nikita-loges.de"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "symfony/dependency-injection": "~2.8|~3.0",
+        "symfony/http-kernel": "~2.8|~3.0",
+        "symfony/config": "~2.8|~3.0",
+        "raven/raven": "~0.13"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shapecode\\Bundle\\LessRavenBundle": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Shapecode\\Bundle\\LessRavenBundle\\Tests": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-release/0.1": "0.1-dev"
+        }
+    }
+}
