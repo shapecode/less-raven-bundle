@@ -1,0 +1,9 @@
+parameters:
+    # monolog
+    shapecode_less_raven.monolog.handler.raven.client.class: Shapecode\Bundle\LessRavenBundle\Monolog\Handler\Raven\Client
+
+services:
+    # monolog
+    shapecode_less_raven.monolog.handler.raven.client:
+        class: %shapecode_less_raven.monolog.handler.raven.client.class%
+        arguments:  ["%shapecode_less_raven.sentry_dsn%"]
