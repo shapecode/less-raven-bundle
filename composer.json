@@ -35,12 +35,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Shapecode\\Bundle\\LessRavenBundle": "src/"
+            "Shapecode\\Bundle\\LessRavenBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Shapecode\\Bundle\\LessRavenBundle\\Tests": "tests/"
+            "Shapecode\\Bundle\\LessRavenBundle\\Tests\\": "tests/"
         }
     },
     "extra": {
