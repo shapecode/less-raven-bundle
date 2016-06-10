@@ -12,12 +12,12 @@
     ],
     "type": "symfony-bundle",
     "license": "MIT",
-    "homepage": "http://shapecode.de",
+    "homepage": "https://github.com/shapecode/less-raven-bundle",
     "support": {
-        "email": "support@nikita-loges.de",
-        "issues": "https://bitbucket.org/shapecode/symfony-less-raven-bundle/issues",
-        "source": "https://bitbucket.org/shapecode/symfony-less-raven-bundle/downloads",
-        "wiki": "https://bitbucket.org/shapecode/symfony-less-raven-bundle/wiki/Home"
+        "email": "support@shapecode.de",
+        "issues": "https://github.com/shapecode/less-raven-bundle/issues",
+        "source": "https://github.com/shapecode/less-raven-bundle/releases",
+        "wiki": "https://github.com/shapecode/less-raven-bundle/wiki"
     },
     "authors": [
         {
@@ -27,11 +27,14 @@
         }
     ],
     "require": {
-        "php": ">=5.5.9",
+        "php": "~5.5|~7.0",
         "symfony/dependency-injection": "~2.8|~3.0",
         "symfony/http-kernel": "~2.8|~3.0",
         "symfony/config": "~2.8|~3.0",
-        "raven/raven": "~0.13"
+        "sentry/sentry": "~0.13"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0"
     },
     "autoload": {
         "psr-4": {
@@ -47,5 +50,7 @@
         "branch-alias": {
             "dev-release/0.1": "0.1-dev"
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
