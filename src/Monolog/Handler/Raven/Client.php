@@ -4,8 +4,9 @@ namespace Shapecode\Bundle\LessRavenBundle\Monolog\Handler\Raven;
 
 /**
  * Class Client
+ *
  * @package Shapecode\Bundle\LessRavenBundle\Monolog\Handler\Raven
- * @author Nikita Loges
+ * @author  Nikita Loges
  */
 class Client extends \Raven_Client
 {

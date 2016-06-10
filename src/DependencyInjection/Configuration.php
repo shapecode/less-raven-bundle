@@ -7,8 +7,9 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
 
 /**
  * Class Configuration
+ *
  * @package Shapecode\Bundle\LessRavenBundle\DependencyInjection
- * @author Nikita Loges
+ * @author  Nikita Loges
  */
 class Configuration implements ConfigurationInterface
 {
@@ -23,10 +24,10 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-                ->scalarNode('sentry_dsn')
-                    ->isRequired()
-                    ->cannotBeEmpty()
-                ->end()
+            ->scalarNode('sentry_dsn')
+            ->isRequired()
+            ->cannotBeEmpty()
+            ->end()
             ->end();
 
         return $treeBuilder;
